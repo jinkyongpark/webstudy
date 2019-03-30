@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+.selected {
+    color: blue;
+  }
+.larger{
+    font-size: 550%;
+}
+</style>
+<body>
+</br>
+</br>
+<h1>HelloWorld</h1>
+<h1 class = "selected" >Welcome</h1>
+<button id = "btn_hide1" class = "btn btn-default"> button </button>
+</br>
+</br>
+<div id = "panel1" class="panel panel-default">
+  <div class="panel-body">
+    I'm panel1
+  </div>
+</div>
+
+<script>
+$(function(){
+  $('#btn_hide1').on('click',function(){
+    $('#btn_hide1').hide();
+
+  });
+});
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.navbar
+{
+	background-color : rgb(95,95,95);
+}
+
+.navbar-nav li a{
+	color:white;
+}
+
+ul.nav .dropdown{
+	position : static;
+}
+
+ul.nav .dropdown-menu{
+	box-sizing : border-box;
+	width : 100%;
+	margin-top : 0;
+	padding :0;
+	border-color : #ccc;
+}
+
+.megamenu-item{
+	display: block;
+	font-size:17px;
+	float:left;
+	clear:both;
+}
+
+.megamenu-item:hover{
+	backgroun-color:white;
+	color:rgb(95,95,95);
+	
+}
+
+
+
+
+
+.form-area {
+  background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
+}
+
+.red {
+  color:red;
+}

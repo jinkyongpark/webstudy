@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+<button id = "btn2" class="btn btn-default" onclick = "button2Clicked()">
+button2
+</button>
+</br>
+</br>
+<div id = "panel2" class="panel panel-default">
+  <div class="panel-body">
+    I'm panel2
+  </div>
+</div>
+
+<script>
+function button2Clicked(){
+  document.getElementById('panel2').classList.add("hidden");
+}
+</script>
+</body>
+</html>
