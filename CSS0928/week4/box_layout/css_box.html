@@ -1,0 +1,110 @@
+<html>
+
+<body></body>
+<style>
+#nonpadding{
+  width: 300px;
+  border:10px solid red;
+  background-color: pink;
+}
+
+  #padding{
+    width: 300px;
+    padding: 25px;
+    background-color: pink;
+    border:10px solid red;
+  }
+  #nonmargin{
+    width: 300px;
+    border: 10px solid green;
+    background-color: pink;
+
+  }
+  #margin{
+    width: 300px;
+    border: 10px solid green;
+    background-color: pink;
+    margin: 25px;
+  }
+  a.hello{
+
+    border : 2px solid black;
+  }
+
+
+  #box {
+  width: 300px;
+  padding: 25px;
+  margin: 25px;
+  background-color: pink;
+  border: 10px solid green;
+}
+  #box2 {
+  width: 500px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+  background-color: pink;
+  }
+
+  #box2_innerbox{
+    width: 300px;
+    border: 25px solid blue;
+    padding: 25px;
+    margin: 25px;
+    background-color: yellow;
+  }
+  #box2_1{
+    width: 500px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    background-color: pink;
+  }
+
+</style>
+
+<!--1. padding-->
+
+<div id = "nonpadding">
+  <a class = "hello">hello world</a>
+</div>
+
+
+<div id = "padding">
+  <a class = "hello">hello world</a>
+</div>
+
+
+<!--2.margin-->
+
+<div id = "nonmargin">
+  <a class = "hello">hello world</a>
+</div>
+
+<div id = "margin">
+  <a class = "hello">hello world</a>
+</div>
+
+
+
+<!--3. padding&margin both-->
+<div id = "box">
+  <a class = "hello">hello world</a>
+</div>
+
+<!--4. advanced : how margin and padding work between several elements-->
+<!--4-1. normal box with margin and padding-->
+<div id = "box2">
+  <a class = "hello">hello world</a>
+</div>
+<!--4-2. inside of box2, there is box2_1.(Css values are same with box)-->
+<div id = "box2_1">
+    <a class = "hello">hello world</a>
+  <div id = "box2_innerbox">
+    <a class = "hello">hello world</a>
+  </div>
+</div>
+
+
+</html>

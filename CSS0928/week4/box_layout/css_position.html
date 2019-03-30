@@ -1,0 +1,66 @@
+<html>
+<style>
+
+div.static{
+  height : 200px;
+  width : 100px;
+  border : solid purple;
+  position: static;
+}
+div.fixed{
+  height : 200px;
+  width : 100px;
+  border : solid red;
+  position: fixed;
+  margin: 50px;
+}
+div.relative{ 
+  height : 200px;
+  width : 100px;
+  border : solid black;
+  position: relative;
+  left : 500px;
+}
+div.relative2 {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid green;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+<body>
+  <div class="sticky">I am sticky! Useful for navigation bar!</div>
+  <div class="static">This is static,default position</div>
+
+  <div class="fixed">This is fixed, move with scolling</div>
+  <div style = "height: 50px;"></div>
+  <div class = "relative">
+    This is relative. move from left by 500px
+  </div>
+
+  <div style = "height: 150px;"></div>
+  <div class="relative2">This is relative
+
+  <div class="absolute">This is absolute</div>
+
+
+</div>
+</body>
+</html>

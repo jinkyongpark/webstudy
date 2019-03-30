@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* This makes sure that the padding and border are included in the total width and height of the elements */
+* {
+    box-sizing: border-box;
+}
+
+/* The columns inside a row are all floating to the left, and are therefore taken out of the flow of the page, 
+and other elements will be placed as if the columns do not exist. To prevent this, we will add a style that clears the flow */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* All these columns should be floating to the left, and have a padding of 15px */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Calculate the percentage for one column: 100% / 12 columns = 8.33%.
+    Then we make one class for each of the 12 columns, class="col-" and a number defining how many columns the section should span */
+	
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.image{
+	width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Busan</h1>
+</div>
+
+<div class="row">
+
+	<div class="col-3 menu">
+	  <ul>
+		<li><a href='#city'>The city</a></li>
+		<li><a href='#'>Geography</a></li>
+		<li><a href='#'>Culture and attractions</a></li>
+		<li><a href='#'>The food</a></li>
+	  </ul>
+	</div>
+
+	<div class="col-9" id='city'>
+	  <h1>The City</h1>
+	  <p>Busan, formerly known as Pusan and now officially Busan Metropolitan City, is South Korea's second most-populous city after Seoul. It is the economic, cultural, and educational center of southeastern Korea, 
+	  with its ports - Korea's busiest and the 9th-busiest in the world - only about 120 miles (190 km) from the Japanese islands of Honshu and Kyushu. 
+	  Its surrounding "Southeast Economic Zone" (including Ulsan and South Gyeongsang) is now South Korea's largest industrial area.</p>
+	</div>
+
+</div>
+
+	<!-- 
+		 What should be column length? 
+	-->
+	<!-- 
+	<div class="row">
+		<div class="col-?">
+			<img src='' class='image'>
+		</div>
+		<div class="col-?">
+		  <h1></h1>
+		  <p></p>
+		</div>
+	</div>
+	-->
+
+</body>
+</html>

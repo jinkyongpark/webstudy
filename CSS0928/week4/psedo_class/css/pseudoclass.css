@@ -1,0 +1,35 @@
+a {
+    padding: 10px 20px;
+	background: #4dafff;
+    color: #fff;
+    box-shadow: 0 0 0 4px #4dafff;
+    border: 1px solid #fff;
+}
+
+/* mouse over link */
+a:hover {
+    background: #7BCD1C;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+/* selected link */
+a:active {
+    color: blue;
+}
+div p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:hover p {
+    display: block;
+}

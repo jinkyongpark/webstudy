@@ -1,0 +1,53 @@
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+
+#rcorners2 {
+    border-radius: 15px 50px;
+    border: 2px solid #73AD21; /*border-width border-style(dotted/solid/double..) border-color*/
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+
+/*image background*/
+#rcorners3 {
+	border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+#rcorners4 {
+	border: 1px solid black;
+    border-radius: 15px 50px 30px 5px;
+    background: url(https://www.w3schools.com/css/img_flwr.gif),url(https://www.w3schools.com/css/paper.gif);
+    background-position: right bottom, left top;
+	background-size: 120px,100px;
+    background-repeat: no-repeat, repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+/*image border*/
+#borderimg { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(https://www.w3schools.com/css/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(https://www.w3schools.com/css/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(https://www.w3schools.com/css/border.png) 30 round;
+}
+#borderimgstretch { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(https://www.w3schools.com/css/border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(https://www.w3schools.com/css/border.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(https://www.w3schools.com/css/border.png) 30 stretch;
+}

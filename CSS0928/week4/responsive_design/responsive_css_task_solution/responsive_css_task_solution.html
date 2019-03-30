@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.image{
+	width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Busan</h1>
+</div>
+
+<div class="row">
+
+	<div class="col-3 menu">
+	  <ul>
+		<li><a href='#city'>The city</a></li>
+		<li><a href='#geography'>Geography</a></li>
+		<li><a href='#culture'>Culture and attractions</a></li>
+		<li><a href='#food'>The food</a></li>
+	  </ul>
+	</div>
+
+	<div class="col-9" id='city'>
+	  <h1>The City</h1>
+	  <p>Busan, formerly known as Pusan and now officially Busan Metropolitan City, is South Korea's second most-populous city after Seoul. It is the economic, cultural, and educational center of southeastern Korea, 
+	  with its ports - Korea's busiest and the 9th-busiest in the world - only about 120 miles (190 km) from the Japanese islands of Honshu and Kyushu. 
+	  Its surrounding "Southeast Economic Zone" (including Ulsan and South Gyeongsang) is now South Korea's largest industrial area.</p>
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-3">
+		<img src='Cable_Car_at_Geumjeong_Mountain.jpg' class='image'>
+	</div>
+	<div class="col-9">
+	  <h1>Geography</h1>
+	  <p>
+			  Busan is located on the Southeastern tip of the Korean Peninsula. It is located on the coast, which determined the development of the whole city itself. 
+			  It is the nearest of South Korea's six largest cities to Japan. The distance as the crow flies from Busan to Tsushima Island, Japan, is about 49.5 km (31 mi), to Fukuoka, Japan, about 180 km (112 mi), 
+			  and by contrast, to Seoul about 314 km (195 mi). Busan borders low mountains on the north and west, and the seas on the south and east. The Nakdong River Delta is located on the west side of the city, and Geumjeongsan, 
+			  the highest mountain in the city, on the north. The Nakdong River, South Korea's longest river, flows through the west and empties into the Korea Strait. The southeastern region, called Yeongnam in Korea, encompasses 
+			  both Gyeongsang Provinces and 3 metropolitan cities of Busan, 
+			  Daegu and Ulsan. Ulsan lies northeast of Busan. Combined population exceeds 13 million.
+	  </p>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-3">
+		<img src='Dadaepo_Beach__Busan__Korea.jpg' class='image'>
+	</div>
+	<div class="col-9" id="culture">
+	  <h1>Culture and attractions</h1>
+	  <p>
+			  Nampo-dong is a popular central shopping and café district. The area around Pukyong National University and Kyungsung University also has many cafés, bars, and restaurants attracting college students and youth.
+		Busan is called the summer capital of Korea since it attracts tourists from all over the country to its six beaches. Luxury hotels and a carnival boardwalk line the beach at Haeundae. Gwangalli Beach has cafés, bars, and restaurants along the beach, and the Grand Gwangan Bridge. Other beaches include Dadaepo Beach on the west edge of the city and Songdo Beach, which is south-central.
+		Geumjeongsan to the west is a popular weekend hiking spot for Busan residents. To the north, the neighborhoods around Pusan National University (also known as PNU, which is one of the most highly recognized national institutes of higher education in Korea) have student theaters, cafés, bars and restaurants, as well as open-air cultural street performances on weekend nights. Nearby is Beomeosa, the city's main Korean Buddhist temple.
+		Yongdusan Park occupies 69,000 square meters/17 acres (7 ha) and is home to the Busan Tower, Yongdusan Art Gallery, and the Busan Aquarium. The park supports approximately seventy different species of trees and is a favorite tourist destination, with various cultural events throughout the year.[23]
+		Dongnae-gu is a wealthy and traditional residential area. Dongnae Oncheon is a natural spa area with many baths, tourist hotels, restaurants, clubs and shopping areas. Many restaurants in the area use family recipes. Chungnyeolsa is a Confucian shrine for soldiers who died during the 16th century battle against the Japanese at Dongnae Fortress.[24]
+		Taejongdae is a natural park with magnificent cliffs facing the open sea on the island of Yeongdo.
+		The area known as the "Foreigners' Shopping Street", but commonly referred to as "Texas Street" near part of the Port of Busan, and adjacent to the front entrance to the Busan Train Station (부산역) has many businesses that cater to the local Russian population, as well as the crews of foreign ships. The area was originally the location of the local Chinatown and still contains a Chinese school.
+		Busan Aquarium, located in Haeundae Beach, is the largest aquarium in South Korea. Haedong Yonggung temple is one of three sacred places related to the Goddess Buddha. It is located right next to the sea. It lies in a mountain in the front and the sea at the back.
+	  </p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-3">
+		<img src='330px-Korean_pan_cake-Dongnae_pajeon-01.jpg' class='image'>
+	</div>
+	<div class="col-9" id="food">
+	  <h1>Food</h1>
+	  <p>
+			Dongnae pajeon (동래파전), a variant of pajeon (Korean savory pancakes), made with whole scallions, sliced chili peppers, and various kinds of seafood in a thick batter of wheat flour, glutinous rice flour, eggs, salt and water.[28][29]
+			During the Korean War, Busan was the biggest refugee destination on the peninsula; people from all regions of Korea went there. Some of these refugees stayed and adapted and adjusted the recipes of their local specialties. One of these foods is milmyeon (밀면) (lit. 'wheat noodle') a version of naengmyeon, cold buckwheat noodle soup, but using wheat flour instead. (Naemyeon is originally a specialty food of Hamhung and Pyongyang, now part of North Korea.[30][31]) Dwaeji gukbap (돼지국밥) 
+			(lit. 'pork/pig soup rice') is also a result of Korean War. It is a hearty pork soup and is becoming more popular nationwide.
+	  </p>
+	</div>
+</div>
+
+
+</body>
+</html>

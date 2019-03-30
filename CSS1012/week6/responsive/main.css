@@ -1,0 +1,68 @@
+* {
+box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+div {
+	text-align: center;
+}
+div.header {
+	background-color: yellow;
+}
+div.nav {
+	background-color: green;
+}
+
+div.content {
+	background-color: blue;
+	padding:20px;
+}
+
+div.footer {
+	background-color: violet;
+	padding: 20px;
+}
+
+div.row {
+	background-color: MediumSeaGreen;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+div.item {
+	background-color: white;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;} 
+.col-3 {width: 25%;} 
+.col-4 {width: 33.33%;} 
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;} 
+.col-8 {width: 66.66%;} 
+.col-9 {width: 75%;} 
+.col-10 {width: 83.33%;} 
+.col-11 {width: 91.66%;} 
+.col-12 {width: 100%;}
+
+[class*="col-"] 
+{    float: left;/*순서*/
+	padding: 15px;
+	border: 1px solid red;
+}
+/*box를 맞춰줌*/
+.row::after{
+	clear: both;
+	display: table;
+	content: "";
+}
+@media screen and (max-width:600px) { 
+	[class*="col-"]{
+		/*fill css property*/
+		 width:100%;/*layout변함*/
+	}
+}
